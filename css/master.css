@@ -1,0 +1,279 @@
+html {
+  background-image: url("../img/bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: 'Work Sans', sans-serif;
+  color: #828282;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: auto auto;
+  grid-row-gap: 15vh;
+}
+
+/* LEFT-UP */
+
+.leftup {
+  background-color: white;
+  border-radius: 0% 0% 40px 0%;
+  min-height: 100vh;
+}
+
+.leftup .content {
+  margin-top: 30%;
+}
+
+.leftup .content h1 {
+  font-size: 3vw;
+  text-align: center;
+}
+
+.leftup .content p {
+  font-size: 2vw;
+  text-align: justify;
+  margin-left: 16%;
+}
+
+.leftup .content button {
+  background-color: #0047FF;
+  border: none;
+  border-radius: 100px;
+  width: 40%;
+  height: 10vh;
+  color: white;
+  font-size: 2vw;
+  text-align: center;
+  margin-left: 30%;
+  margin-top: 8vh;
+  cursor: pointer;
+}
+
+.leftup .content h6 {
+  text-decoration: none;
+  color: grey;
+  text-align: center;
+  font-size: 1.6vw;
+  margin-top: 12vh;
+  cursor: pointer;
+}
+
+.leftup .content a {
+  text-decoration: none;
+  color: grey;
+}
+
+/* RIGHT-UP */
+
+
+.rightup .content {
+  overflow: hidden;
+}
+
+.rightup .content img {
+  width: 28vw;
+  margin-left: 25%;
+  margin-top: 5%;
+}
+
+/* LEFT-DOWN */
+
+.leftdown .content {
+  display: grid;
+  grid-template-columns: 25% 25%;
+  grid-template-rows: 25vh 25vh;
+  grid-column-gap: 5vw;
+  grid-row-gap: 5vh;
+  margin-left: 25%;
+  margin-top: 25vh;
+}
+
+.leftdown .content img {
+  width: 100%;
+}
+
+/* RIGHT-DOWN */
+
+.rightdown {
+  background-color: white;
+  border-radius: 40px 0% 0% 0%;
+  min-height: 100vh;
+}
+
+.rightdown .content {}
+
+.rightdown .content h1 {
+  font-size: 3vw;
+  margin-left: 20%;
+}
+
+.rightdown .content input {
+  background-color: #E2E2E2;
+  border: none;
+  border-radius: 25px;
+  width: 60%;
+  margin-left: 20%;
+  line-height: 4vh;
+}
+
+.rightdown .content input.desc {
+  line-height: 16vh;
+}
+
+.rightdown .content p {
+  margin-left: 20%;
+  font-size: 1.5vw;
+}
+
+.rightdown .content button {
+  background-color: #0047FF;
+  border: none;
+  border-radius: 100px;
+  width: 40%;
+  height: 10vh;
+  color: white;
+  font-size: 2vw;
+  text-align: center;
+  margin-left: 30%;
+  margin-top: 4vh;
+  cursor: pointer;
+}
+
+/* ----- Mobile ----- */
+
+@media only screen and (max-width: 600px) {
+  .wrapper {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto;
+    grid-row-gap: 0vh;
+  }
+
+
+  /* LEFT-UP */
+
+  .leftup {
+    background-color: white;
+    border-radius: 0% 0% 40px 40px;
+    min-height: 50vh;
+  }
+
+  .leftup .content {
+    margin-top: 20%;
+  }
+
+  .leftup .content h1 {
+    font-size: 6vw;
+    text-align: center;
+  }
+
+  .leftup .content p {
+    font-size: 4vw;
+    text-align: justify;
+    margin-left: 16%;
+  }
+
+  .leftup .content button {
+    background-color: #0047FF;
+    border: none;
+    border-radius: 100px;
+    width: 40%;
+    height: 8vh;
+    color: white;
+    font-size: 4vw;
+    text-align: center;
+    margin-left: 30%;
+    margin-top: 8vh;
+    cursor: pointer;
+  }
+
+  .leftup .content h6 {
+    text-decoration: none;
+    color: grey;
+    text-align: center;
+    font-size: 3.2vw;
+    margin-top: 12vh;
+    cursor: pointer;
+  }
+
+  .leftup .content a {
+    text-decoration: none;
+    color: grey;
+  }
+
+  /* RIGHT-UP */
+  .rightup {
+    display: none;
+}
+
+  /* LEFT-DOWN */
+
+  .leftdown .content {
+    display: grid;
+    grid-template-columns: 25% 25%;
+    grid-template-rows: 10vh 10vh;
+    margin-left: 25%;
+    min-height: 50vh;
+    margin-top: 10vh;
+  }
+
+  .leftdown .content img {
+    width: 100%;
+    margin-left: 20%;
+  }
+
+  /* RIGHT-DOWN */
+  .rightdown {
+    background-color: white;
+    border-radius: 40px 0% 0% 0%;
+    min-height: 100vh;
+  }
+
+  .rightdown .content {}
+
+  .rightdown .content h1 {
+    font-size: 7vw;
+    margin-left: 20%;
+  }
+
+  .rightdown .content input {
+    background-color: #E2E2E2;
+    border: none;
+    border-radius: 25px;
+    width: 60%;
+    margin-left: 20%;
+    line-height: 4vh;
+  }
+
+  .rightdown .content input.desc {
+    line-height: 16vh;
+  }
+
+  .rightdown .content p {
+    margin-left: 20%;
+    font-size: 4vw;
+  }
+
+  .rightdown .content button {
+    background-color: #0047FF;
+    border: none;
+    border-radius: 100px;
+    width: 40%;
+    height: 8vh;
+    color: white;
+    font-size: 4vw;
+    text-align: center;
+    margin-left: 30%;
+    margin-top: 8vh;
+    cursor: pointer;
+  }
+
+
+
+}
